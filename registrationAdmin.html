@@ -1,0 +1,76 @@
+<!-- /*********************************************************************************
+*  WEB322 – Assignment 6
+*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  
+*  No part of this assignment has been copied manually or electronically from any other source
+*  (including web sites) or distributed to other students.
+* 
+*  Name: Soumik Saha     Student ID: 140721200          Date: 5th December 2021.
+*
+*  Online (Heroku) URL: https://arcane-escarpment-38969.herokuapp.com/
+*
+********************************************************************************/ -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="static/styles.css" type="text/css">
+        <title>Register Yourself as one of our own.</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img class="logo" src="static/logo.png"></div>
+            <div id="name1"><h1>Quick Meal Delivery</h1></div>    
+                <nav>
+                <h2 id="home"><a href="/">HOME</a></h2>
+                <h2 id="meals"><a href="/mealPackage">MEAL PACKAGES</a></h2>
+            </nav>    
+        </header>
+        <main>
+            <div id="form"style="background-image: url('static/bg1.jpg'); height:900px;background-repeat: no-repeat;">
+                <form action="/register-admin" method="POST" id="register-form">
+                    <h2 id="heading-createacc">Create an admin Account</h2>
+                    <div id="Social-Media">
+                        <a href=""><img id="facebook"src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="facebook icon" height="24px"/></a>
+                        <a href=""><img id="google"src="https://img.icons8.com/material-rounded/24/000000/google-logo.png" alt="google icon"/></a>
+                        <a href=""><img id="twitter"src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png" alt="twitter icon" height="24px"/></a>
+                        <a href=""><img id="linkedin"src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt="linkedin icon" height="24px"/></a>
+                    </div>
+                    <h2 id="option">------------------------------------------- OR -------------------------------------------</h2>
+                    <label for="first_name"><span class="red-text">*</span>First Name</label>
+                    <input id="first_name" type="text" name="first_name" autofocus tabindex="1" required autocomplete="on" placeholder="Enter your first name"/><br />
+                    <label for="last_name"><span class="red-text">*</span>Last Name</label>
+                    <input id="last_name" type="text" name="last_name"tabindex="1" required autocomplete="on" placeholder="Enter your last name"/><br />
+                    <label for="email"><span class="red-text">*</span>Email Id</label>
+                    <input id="email" type="email" name="email"tabindex="3" required autocomplete="on" placeholder="someone@example.com"/><br />
+                    <label for="username"><span class="red-text">*</span>Username</label>
+                    <input id="username" type="text" name="username"tabindex="4" required placeholder="Create an unique username"/><br />
+                    <label for="password"><span class="red-text">*</span>Password</label>
+                    <input id="password" type="password" name="password" tabindex="5" required placeholder="Create a strong password."/><br />
+                    <div id="err-msgPass"></div>
+                    <label for="postal"><span class="red-text">*</span>POSTAL CODE</label>
+                    <input id="postal" type="text" name="postal" required tabindex="6" placeholder="M2J 2X5"> 
+                    <div id="err-msg"></div>
+                    <button type="submit" tabindex="6">Register</button>
+                    <a href="/signin"><h3>Already an admin?</h3></a>
+                </form>
+             </div>
+        </main>
+        <footer>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Social Media</li>
+            </ul>
+            <div id="Social-Media-footer">
+                <a href=""><img id="facebook"src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="facebook icon" height="24px"/></a>
+                <a href=""><img id="google"src="https://img.icons8.com/material-rounded/24/000000/google-logo.png" alt="google icon"/></a>
+                <a href=""><img id="twitter"src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png" alt="twitter icon" height="24px"/></a>
+                <a href=""><img id="linkedin"src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt="linkedin icon" height="24px"/></a>
+            </div>
+            <div id="final-div"><p><a href="ssaha26@myseneca.ca">Contact the webpage creator</a></p>
+            <p>Copyright © Fall 2021, Soumik Saha, WEB322 ZCC</p>
+        </div>
+        </footer>
+        <script src="static/validation.js"></script>
+        </body>
+        </html>

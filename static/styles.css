@@ -1,0 +1,371 @@
+/*********************************************************************************
+*  WEB322 – Assignment 6
+*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  
+*  No part of this assignment has been copied manually or electronically from any other source
+*  (including web sites) or distributed to other students.
+* 
+*  Name: Soumik Saha     Student ID: 140721200          Date: 5th December 2021.
+*
+*  Online (Heroku) URL: https://arcane-escarpment-38969.herokuapp.com/
+*
+********************************************************************************/ 
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
+body{
+    font-family: 'Gemunu Libre',sans-serif;
+    background: rgb(224, 151, 224);
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+main{
+    margin:0px;
+    border:0px;
+    padding: 0px;
+    background: rgb(255, 213, 213);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color: brown;
+}
+ .logo{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 100px;
+} 
+#log{
+    padding-top: 30px;
+    height: 100px;
+}
+#new-admin{
+    padding-left: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+#home,#meals{
+    margin-right: 20px;
+}
+#registration, #login{
+    margin-right: 20px;
+}
+header{
+    margin: 0px;
+    margin-left: 15px;
+    border: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#second-heading{
+    padding: 250px 300px 0px 300px;
+    font-size: 4em;
+    font-weight: bolder;
+    color: rgb(170, 32, 32);
+}
+#buttons{
+    padding: 100px 450px;
+    justify-content: space-between;
+
+}
+#view-package{
+    margin-right: 20px;
+}
+#view-package,#build-order{
+    font-size: 2em;
+    border-radius: 10px;
+    border:0px;
+    height: 60px;
+    background-color: #EDB200;
+    cursor: pointer;
+}
+.third-heading{
+    text-align: center;
+    font-size: 3em;
+}
+#process{
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.sub-heading{
+    padding-right: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+#first,#last{
+    padding-right: 50px;
+}
+.desc{
+    text-align: left;
+    padding-right: 20px;
+}
+#cooked-items{
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+figcaption{
+    text-align: center;
+}
+footer{
+    font-size: 1.5em;
+}
+#cooked-items{
+    padding-bottom: 100px;
+}
+#final-div{
+    padding-left:20%
+}
+#packages{
+    display: grid;
+    grid-template-columns: repeat(4,280px);
+    padding-left: 30px;
+    gap: 30px;
+    row-gap: 100px;
+}
+#second-heading-package{
+    text-align: center;
+    font-size: 5em;
+    padding: 25% 20%;
+    color: rgb(0, 0, 0);
+}
+#info{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.meal-heading{
+    font-size: 1em;
+    text-align: center;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+}
+.des-package,.des-package-cost1,.des-package-cost2{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+.des-package-cost1{
+    padding-top: 20px;
+}
+.des-package-cost2{
+    padding-top: 35px;
+}
+#packages{
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+input:invalid {
+    border: 2px solid red;
+  }
+  input:valid {
+    border: 2px solid black;
+  }
+  #form{
+      padding: 8% 25%;
+  }
+  form,#login-formAdmin{
+      display: flex;
+      flex: 0.5;
+      width: 100%;
+      flex-direction: column;
+      background-color: rgb(245, 201, 245);
+      /* align-items: center; */
+      justify-content: stretch; 
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  input{
+      width:70%;
+      align-self: center;
+      border: 0;
+      margin: 0;
+      padding: 10px;
+      border-radius: 5px;
+  }
+  label{
+      width: 73%;
+      align-self: center;
+      font-family: 'Gemunu Libre',sans-serif;
+      font-weight: bolder;
+      margin-bottom: 10px;
+      font-size: 1.2em
+  }
+  #heading-createacc{
+      text-align: center;
+      font-size: 2em;
+  }
+  #Social-Media{
+    display: flex;  
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 60%;
+    padding: 25px 140px;
+  }
+  form h3{
+    width: 45%;
+    text-align: center;
+  }
+  button[type='submit']{
+    width: 40%;
+    align-self: center;
+    vertical-align: middle;
+    padding: 5px;
+    font-family: 'Gemunu Libre',sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0px;
+    margin: 0px;
+    margin-top: 25px;
+    font-size: 1.1em;
+  }
+  button[type='submit']:hover{
+      cursor: pointer;
+      background-color: #AA96DA;
+  }
+  #option{
+      width: 100%;
+      text-align: center;
+      font-size: 1em;
+      padding-bottom: 25px;
+  }
+  #heading-login,#heading-package{
+      text-align: center;
+      font-size: 2em;
+      border-bottom: 80px;
+  }
+  #forgot-username{
+     margin: 0px; 
+     margin-left: 2%;
+    padding: 2% 0% 3%;
+      font-size: 1.1em;
+  }
+  #forgot-pass{
+    margin: 0px;
+    padding: 0%;
+      font-size: 1.1em;
+  }
+  #new-user{
+    width: 40%
+  }
+  #name1{
+    padding-left: 80px;
+  }
+  #logout{
+      margin-right: 20px;
+  }
+  #welcome-content{
+      padding-top: 10%;
+      text-align: center;
+      vertical-align: middle ;
+      color: rgb(170, 32, 32);
+  }
+  #welcome-content h1{
+      font-size: 6em;
+  }
+  #welcome-content h2{
+    font-size: 3em;
+}
+.red-text{
+    color: red;
+    font-size: large;
+}
+#err-msg,#err-msgPass{
+    width: 80%;
+    margin: 0;
+    border: 0;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    font-size: 1em;
+    text-align: center;
+    color: red;
+}
+#err-msgPass{
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    font-size: 1em;
+    text-align: center;
+    color: red;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#Social-Media-footer{
+    padding: 0;
+    padding-left: 73%;
+    border: 0;
+    margin: 0;
+}
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+textarea{
+    margin: 0px 90px;
+}
+#dollar-sign{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding-left: 70px;
+}
+#add_Meal_Package{
+    margin: 10% 5%;
+    font-size: 1.2em;
+    font-family: 'Gemunu Libre',sans-serif;
+    font-weight: bolder;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(255, 188, 107);
+    border-radius: 10px;
+    cursor: pointer;
+}
+th{
+    width: 25%;
+}
+td{
+    padding: 20px 0px;
+}
+#addMod{
+    margin-bottom: 40px;
+}
+#head_pack{
+    text-align: center;
+    padding-top: 80px;
+}
+.noPackMsg{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#loginErr{
+    text-align: center;
+    color:red;
+}
+#admin{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    padding-bottom: 30px;
+}
